@@ -1,8 +1,8 @@
-FROM node
+FROM node 
 WORKDIR /app
-COPY packa
-COPY
-RUN
-COPY
-EXPOSE
-CMD
+COPY package.json .
+COPY package-lock.json .
+RUN npm install
+COPY . .
+EXPOSE 3000
+CMD ["npm","start"]
