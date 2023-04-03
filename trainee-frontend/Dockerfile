@@ -1,0 +1,8 @@
+FROM node
+WORKDIR /app
+COPY packa
+COPY
+RUN
+COPY
+EXPOSE
+CMD
